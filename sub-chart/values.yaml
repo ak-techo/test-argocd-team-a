@@ -1,5 +1,5 @@
-providerConfigName: team-a-config
-namespace: team-a
+providerConfigName: team-b-config
+namespace: team-b
 
 subnets:
   - subnetName: "test-subnet-three"
