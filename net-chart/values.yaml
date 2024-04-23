@@ -1,9 +1,9 @@
-providerConfigName: boot-gcp-key
-namespace: dev
+providerConfigName: team-a-config
+namespace: team-a
 
 networks:
-  - vpcName: test-two
+  - vpcName: test-three
     project: vonage-internal-playground
     autoCreateSubnetworks: false
     labels:
-      network-name: vpc-one
+      network-name: vpc-test
