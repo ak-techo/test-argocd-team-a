@@ -1,8 +1,8 @@
 providerConfigName: team-b-config
-namespace: team-b
+# namespace: team-b
 
 subnets:
-  - subnetName: "test-subnet-three"
+  - subnetName: "test-subnet-four"
     networkSelector:
       matchLabels:
         network-name: test-vpc
