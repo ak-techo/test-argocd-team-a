@@ -1,0 +1,17 @@
+providerConfigName: team-a-config
+namespace: team-a
+
+subnets:
+  - subnetName: "test-subnet-three"
+    networkSelector:
+      matchLabels:
+        network-name: test-vpc
+    ipCidrRange: "10.120.0.0/20"
+    region: "us-central1"
+    secondaryIpRange:
+      - rangeName: temp1 
+        ipCidrRange: 192.168.10.0/24
+      - rangeName: temp2
+        ipCidrRange: 172.16.0.0/24
+    labels:
+      subnet-name: subnet-two

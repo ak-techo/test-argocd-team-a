@@ -1,9 +1,0 @@
-providerConfigName: team-a-config
-namespace: team-a
-
-networks:
-  - vpcName: test-three
-    project: vonage-internal-playground
-    autoCreateSubnetworks: false
-    labels:
-      network-name: vpc-test
