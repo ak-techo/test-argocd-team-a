@@ -1,0 +1,43 @@
+{{- range .Values.networks}}
+apiVersion: compute.gcp.vonage.com/v1alpha1
+kind: Network
+metadata:
+  name: {{ .vpcName }}
+  namespace: {{ $.Values.namespace }}
+  labels: 
+  {{- range $key, $value := .labels }}
+    {{ $key }}: {{ $value }}
+  {{- end }}
+spec:
+  providerConfigRef:
+    name: {{ $.Values.providerConfigName }}
+  ipCidrRange: {{ .ipCidrRange }}
+  vpcName: {{ .vpcName }}
+  autoCreateSubnetworks: {{ .autoCreateSubnetworks }}
+  {{- if .description }}
+  description: {{ .description }}
+  {{- end }}
+  {{- if .deleteDefaultRoutesOnCreate }}
+  deleteDefaultRoutesOnCreate: {{ .deleteDefaultRoutesOnCreate }}
+  {{- end }}
+  {{- if .enableUlaInternalIpv6 }}
+  enableUlaInternalIpv6: {{ .enableUlaInternalIpv6 }}
+  {{- end }}
+  {{- if .project }}
+  project: {{ .project }}
+  {{- end }}
+  {{- if .internalIpv6Range }}
+  internalIpv6Range: {{ .internalIpv6Range }}
+  {{- end }}
+  {{- if .mtu }}
+  mtu: {{ .mtu }}
+  {{- end }}
+  {{- if .networkFirewallPolicyEnforcementOrder }}
+  networkFirewallPolicyEnforcementOrder: {{ .networkFirewallPolicyEnforcementOrder }}
+  {{- end }}
+  {{- if .routingMode }}
+  routingMode: {{ .routingMode }}
+  {{- end }}
+
+---
+{{- end }}

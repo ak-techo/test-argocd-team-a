@@ -1,0 +1,9 @@
+providerConfigName: boot-gcp-key
+namespace: dev
+
+networks:
+  - vpcName: test-two
+    project: vonage-internal-playground
+    autoCreateSubnetworks: false
+    labels:
+      network-name: vpc-one
