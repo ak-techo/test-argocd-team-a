@@ -9,8 +9,8 @@ metadata:
     {{ $key }}: {{ $value }}
   {{- end }}
 spec:
-  providerConfigRef:
-    name: {{ $.Values.providerConfigName }}
+  parameters:
+    providerConfigName: {{ $.Values.providerConfigName }}
   ipCidrRange: {{ .ipCidrRange }}
   vpcName: {{ .vpcName }}
   autoCreateSubnetworks: {{ .autoCreateSubnetworks }}
