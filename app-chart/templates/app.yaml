@@ -4,17 +4,17 @@ metadata:
   name: iam-roles
   namespace: argocd
 spec:
-  project: team-a
+  project: default
   source:
     repoURL: 'https://github.com/ak-techo/test-argocd-team-a.git'
-    path: subnet-chart
+    path: sub-chart
     targetRevision: main
     helm:
       valueFiles:
       - dev-values.yaml
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: team-a
+    namespace: default
   syncPolicy:
     automated:
       prune: true
