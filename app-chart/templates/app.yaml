@@ -11,7 +11,7 @@ spec:
     targetRevision: main
     helm:
       values: |
-        providerConfigName: boot-gcp-config
+        providerConfigName: boot-gcp-key
         namespace: default
 
         subnets:
