@@ -1,10 +1,10 @@
-providerConfigName: team-a-config
-namespace: team-a
+# providerConfigName: team-a-config
+# namespace: team-a
 
-subnets:
-  - subnetName: "test-subnet-one"
-    networkSelector:
-      matchLabels:
-        network-name: test-vpc
-    ipCidrRange: "10.120.0.0/20"
-    region: "us-central1"
+# subnets:
+#   - subnetName: "test-subnet-one"
+#     networkSelector:
+#       matchLabels:
+#         network-name: test-vpc
+#     ipCidrRange: "10.120.0.0/20"
+#     region: "us-central1"
