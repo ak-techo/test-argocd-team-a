@@ -9,10 +9,10 @@ spec:
   project: default
   sources:
     - repoURL: 'https://github.com/ak-techo/test-argocd-team-b.git'
-      path: proj-dash-app
+      path: proj-dash-dev-app
       targetRevision: main
     - repoURL: 'https://github.com/ak-techo/test-argocd-team-b.git'
-      path: proj-olympus-app
+      path: proj-olympus-dev-app
       targetRevision: main
   destination:
     server: 'https://kubernetes.default.svc'
