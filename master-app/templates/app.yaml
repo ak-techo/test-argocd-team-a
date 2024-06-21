@@ -7,7 +7,7 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-  source:
+  sources:
     - repoURL: 'https://github.com/ak-techo/test-argocd-team-b.git'
       path: proj-dash-app
       targetRevision: main
