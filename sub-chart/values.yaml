@@ -1,4 +1,5 @@
-providerConfigName: boot-gcp-config
+providerConfigName: boot-gcp-key-temp
+namespace: dev
 
 subnets:
   - subnetName: "test-subnet-one"
