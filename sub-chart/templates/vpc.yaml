@@ -3,6 +3,7 @@ apiVersion: compute.gcp.vonage.com/v1alpha1
 kind: Subnetwork
 metadata:
   name: {{ .subnetName }}
+  namespace: {{ $.Values.namespace }}
   labels: 
   {{- range $key, $value := .labels }}
     {{ $key }}: {{ $value }}
