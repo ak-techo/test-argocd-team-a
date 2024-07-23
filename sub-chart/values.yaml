@@ -1,10 +1,7 @@
-# providerConfigName: team-a-config
-# namespace: team-a
+providerConfigName: boot-gcp-config
 
-# subnets:
-#   - subnetName: "test-subnet-one"
-#     networkSelector:
-#       matchLabels:
-#         network-name: test-vpc
-#     ipCidrRange: "10.120.0.0/20"
-#     region: "us-central1"
+subnets:
+  - subnetName: "test-subnet-one"
+    network: "projects/vonage-internal-playground/global/networks/test-vpc-one"
+    ipCidrRange: "10.120.0.0/20"
+    region: "us-central1"
