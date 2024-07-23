@@ -6,3 +6,7 @@ subnets:
     network: "projects/vonage-internal-playground/global/networks/test-vpc-one"
     ipCidrRange: "10.120.0.0/20"
     region: "us-central1"
+  - subnetName: "test-subnet-two"
+    network: "projects/vonage-internal-playground/global/networks/test-vpc-one"
+    ipCidrRange: "10.121.0.0/20"
+    region: "us-east4"
